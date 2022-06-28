@@ -20,7 +20,11 @@ export default function App() {
         イーサリアムウォレットを接続して、メッセージを作成したら、<span role="img" aria-label="hand-wave">👋</span>を送ってください<span role="img" aria-label="shine">✨</span>
         </div>
 
-        <button className="waveButton" onClick={wave}>
+        <button className="waveButton" onClick={() => {
+                      window.open(
+                        `https://metamask.app.link/dapp/${window.location.host}/#/`
+                      );
+                    }}>
         Wave at Me
         </button>
       </div>
